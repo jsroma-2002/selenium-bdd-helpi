@@ -53,7 +53,8 @@ public class AddGuideStepDef {
     }
 
     @When("Hace click en profile")
-    public void haceClickEnProfile() {
+    public void haceClickEnProfile() throws InterruptedException{
+        TimeUnit.SECONDS.sleep(2);
 
         webDriver.findElement(By.linkText("Profile")).click();
     }

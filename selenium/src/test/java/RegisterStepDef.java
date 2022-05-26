@@ -37,14 +37,14 @@ public class RegisterStepDef {
     @When("Hace click en el boton register now")
     public void leHaceClick() {
 
-        webDriver.findElement(By.linkText("Register now")).click();
+        webDriver.findElement(By.linkText("Register")).click();
 
     }
 
     @When("Completa sus datos")
     public void completarDatos() {
-        webDriver.findElement(By.id("user")).sendKeys("Test2");
-        webDriver.findElement(By.id("email")).sendKeys("test2@gmail.com");
+        webDriver.findElement(By.id("user")).sendKeys("Test");
+        webDriver.findElement(By.id("email")).sendKeys("test@gmail.com");
         webDriver.findElement(By.id("password")).sendKeys("test");
         webDriver.findElement(By.id("birthdate")).sendKeys("22032001");
 
